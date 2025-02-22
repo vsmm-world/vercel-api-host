@@ -12,6 +12,7 @@ export class AppController {
       .get('https://api.portglint.co')
       .then((response) => {
         console.log(response.data);
+        return response.data;
       })
       .catch((error) => {
         console.error(error);
